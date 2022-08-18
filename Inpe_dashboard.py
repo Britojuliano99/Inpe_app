@@ -6,7 +6,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 @st.cache
 def read_table():
-    df=pd.read_excel("/home/juliano/Documents/Inpe_Data/2022_data.xlsx",index_col="Date_Time",parse_dates=["Date_Time"])
+    df=pd.read_excel("2022_data.xlsx",index_col="Date_Time",parse_dates=["Date_Time"])
     df.sort_index(inplace=True)
     return df
 @st.cache
